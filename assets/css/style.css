@@ -1,0 +1,1027 @@
+```css
+/*==================================================
+ Aadhira Primetech
+ Premium Training Institute Website
+ style.css
+==================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#ffffff;
+    color:#1f2937;
+    overflow-x:hidden;
+    line-height:1.7;
+}
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    transition:.4s;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+section{
+
+    padding:90px 0;
+
+}
+
+/*==============================
+ COLORS
+==============================*/
+
+:root{
+
+    --primary:#0d6efd;
+
+    --secondary:#081c3a;
+
+    --orange:#ff9800;
+
+    --light:#f8fafc;
+
+    --dark:#111827;
+
+    --gray:#6b7280;
+
+    --white:#ffffff;
+
+}
+
+/*==============================
+ NAVBAR
+==============================*/
+
+.navbar{
+
+    background:rgba(8,28,58,.95);
+
+    backdrop-filter:blur(12px);
+
+    transition:.4s;
+
+    padding:15px 0;
+
+}
+
+.navbar-brand{
+
+    display:flex;
+
+    align-items:center;
+
+    color:#fff!important;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.navbar-brand img{
+
+    height:55px;
+
+}
+
+.nav-link{
+
+    color:#fff!important;
+
+    margin-left:18px;
+
+    font-weight:500;
+
+    position:relative;
+
+}
+
+.nav-link:hover{
+
+    color:var(--orange)!important;
+
+}
+
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--orange);
+
+    transition:.4s;
+
+}
+
+.nav-link:hover::after{
+
+    width:100%;
+
+}
+
+.dropdown-menu{
+
+    border:none;
+
+    border-radius:12px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+.dropdown-item{
+
+    padding:12px 18px;
+
+}
+
+.dropdown-item:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/*==============================
+ BUTTONS
+==============================*/
+
+.btn{
+
+    border-radius:50px;
+
+    padding:14px 30px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.btn-warning{
+
+    background:var(--orange);
+
+    border:none;
+
+    color:#fff;
+
+}
+
+.btn-warning:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 25px rgba(255,152,0,.35);
+
+}
+
+.btn-primary{
+
+    background:var(--primary);
+
+    border:none;
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.btn-outline-light{
+
+    border:2px solid #fff;
+
+}
+
+.btn-outline-light:hover{
+
+    background:#fff;
+
+    color:var(--secondary);
+
+}
+
+/*==============================
+ HERO
+==============================*/
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    color:#fff;
+
+    background:
+
+    linear-gradient(rgba(8,28,58,.85),rgba(8,28,58,.88)),
+
+    url("../images/hero-bg.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.hero h5{
+
+    letter-spacing:3px;
+
+    font-weight:700;
+
+}
+
+.hero h1{
+
+    font-size:62px;
+
+    font-weight:800;
+
+    margin:20px 0;
+
+    line-height:1.2;
+
+}
+
+.hero h1 span{
+
+    color:var(--orange);
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+    opacity:.95;
+
+    max-width:600px;
+
+}
+
+.hero-image{
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+}
+
+.hero-stats{
+
+    display:flex;
+
+    gap:45px;
+
+    margin-top:45px;
+
+}
+
+.hero-stats h2{
+
+    font-size:42px;
+
+    color:var(--orange);
+
+    font-weight:700;
+
+}
+
+.hero-stats p{
+
+    margin-top:-8px;
+
+    color:#fff;
+
+}
+
+/*==============================
+ FLOAT ANIMATION
+==============================*/
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+/*==============================
+ SECTION TITLE
+==============================*/
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    color:var(--secondary);
+
+}
+
+.section-title p{
+
+    color:var(--gray);
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+```
+```css
+/*==================================================
+FEATURE CARDS
+==================================================*/
+
+.feature-card{
+
+    background:#ffffff;
+
+    padding:35px 25px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    transition:0.35s ease;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    height:100%;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 45px rgba(0,0,0,.15);
+
+}
+
+.feature-card i{
+
+    font-size:48px;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.feature-card h4{
+
+    font-size:24px;
+
+    font-weight:600;
+
+    margin-bottom:12px;
+
+}
+
+.feature-card p{
+
+    color:var(--gray);
+
+    margin:0;
+
+}
+
+/*==================================================
+COURSES
+==================================================*/
+
+.courses{
+    background:#ffffff;
+}
+
+.course-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+    height:100%;
+
+}
+
+.course-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+}
+
+.course-card img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+}
+
+.course-card .p-4{
+
+    padding:30px !important;
+
+}
+
+.course-card h3{
+
+    color:var(--secondary);
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.course-card p{
+
+    color:var(--gray);
+
+    margin-bottom:25px;
+
+    min-height:90px;
+
+}
+
+.course-card .btn{
+
+    width:100%;
+
+}
+
+/*==================================================
+WHY CHOOSE US
+==================================================*/
+
+.why-us{
+
+    background:#ffffff;
+
+}
+
+.why-us h2{
+
+    color:var(--secondary);
+
+    font-size:42px;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.why-us p{
+
+    color:var(--gray);
+
+    font-size:17px;
+
+}
+
+.icon-box{
+
+    background:#ffffff;
+
+    border-left:5px solid var(--primary);
+
+    border-radius:12px;
+
+    padding:18px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.icon-box:hover{
+
+    background:var(--primary);
+
+    color:#ffffff;
+
+    transform:translateX(8px);
+
+}
+
+.icon-box:hover i{
+
+    color:#ffffff !important;
+
+}
+
+.icon-box i{
+
+    margin-right:10px;
+
+    font-size:20px;
+
+}
+
+/*==================================================
+PLACEMENT
+==================================================*/
+
+.placement{
+
+    background:linear-gradient(135deg,#081c3a,#0d6efd);
+
+    color:#ffffff;
+
+}
+
+.placement h2{
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.placement .text-primary{
+
+    color:#ffb300 !important;
+
+    font-size:48px;
+
+    font-weight:700;
+
+}
+
+.placement p{
+
+    color:#f1f5f9;
+
+}
+
+/*==================================================
+COUNTER BOXES
+==================================================*/
+
+.counter-box{
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.3s;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.counter-box:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.counter-box h2{
+
+    color:var(--primary);
+
+    font-size:48px;
+
+    font-weight:700;
+
+}
+
+.counter-box span{
+
+    color:var(--gray);
+
+    display:block;
+
+    margin-top:8px;
+
+    font-size:16px;
+
+}
+
+/*==================================================
+COMMON IMAGE EFFECTS
+==================================================*/
+
+.rounded-image{
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+
+}
+
+.rounded-image img{
+
+    transition:.4s;
+
+}
+
+.rounded-image:hover img{
+
+    transform:scale(1.05);
+
+}
+```
+```css
+/*==================================================
+TESTIMONIALS
+==================================================*/
+
+.testimonials{
+    background:#f8fafc;
+}
+
+.testimonial-card{
+    background:#fff;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    transition:.35s ease;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    height:100%;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 40px rgba(0,0,0,.15);
+}
+
+.testimonial-card img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:0 auto 20px;
+    border:4px solid var(--primary);
+}
+
+.testimonial-card h5{
+    font-weight:700;
+    color:var(--secondary);
+}
+
+.testimonial-card small{
+    color:var(--gray);
+}
+
+.testimonial-card p{
+    margin:20px 0;
+    color:var(--gray);
+}
+
+.testimonial-card .fa-star{
+    color:#ffc107;
+}
+
+/*==================================================
+CONTACT
+==================================================*/
+
+#contact{
+    background:#ffffff;
+}
+
+#contact h2{
+    color:var(--secondary);
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+#contact p{
+    color:var(--gray);
+}
+
+#contact i{
+    color:var(--primary);
+    margin-right:10px;
+}
+
+#contact .form-control{
+    border-radius:12px;
+    padding:14px;
+    border:1px solid #d1d5db;
+    box-shadow:none;
+}
+
+#contact .form-control:focus{
+    border-color:var(--primary);
+    box-shadow:0 0 0 .2rem rgba(13,110,253,.15);
+}
+
+#contact textarea{
+    resize:none;
+}
+
+/*==================================================
+FOOTER
+==================================================*/
+
+footer{
+    background:var(--secondary);
+    color:#fff;
+}
+
+footer h4,
+footer h5{
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+footer p{
+    color:#cbd5e1;
+}
+
+footer ul{
+    padding:0;
+}
+
+footer ul li{
+    margin-bottom:12px;
+}
+
+footer ul li a{
+    color:#cbd5e1;
+    transition:.3s;
+}
+
+footer ul li a:hover{
+    color:var(--orange);
+    padding-left:5px;
+}
+
+footer .fab{
+    width:42px;
+    height:42px;
+    line-height:42px;
+    text-align:center;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    transition:.3s;
+}
+
+footer .fab:hover{
+    background:var(--orange);
+    color:#fff;
+}
+
+/*==================================================
+WHATSAPP BUTTON
+==================================================*/
+
+.whatsapp-float{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#25D366;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:30px;
+    z-index:999;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.1);
+    color:#fff;
+}
+
+/*==================================================
+BACK TO TOP
+==================================================*/
+
+#backToTop{
+    position:fixed;
+    right:20px;
+    bottom:95px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:var(--primary);
+    color:#fff;
+    cursor:pointer;
+    display:none;
+    z-index:998;
+    transition:.3s;
+}
+
+#backToTop:hover{
+    background:var(--orange);
+}
+
+/*==================================================
+UTILITY CLASSES
+==================================================*/
+
+.shadow-lg-custom{
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+}
+
+.radius-20{
+    border-radius:20px;
+}
+
+.text-orange{
+    color:var(--orange);
+}
+
+.bg-primary-gradient{
+    background:linear-gradient(135deg,var(--primary),var(--secondary));
+}
+
+/*==================================================
+ANIMATIONS
+==================================================*/
+
+.fade-up{
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media (max-width:991px){
+
+.hero{
+    text-align:center;
+    padding:120px 0 80px;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero-stats{
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.navbar-nav{
+    margin-top:20px;
+}
+
+}
+
+@media (max-width:768px){
+
+section{
+    padding:70px 0;
+}
+
+.hero h1{
+    font-size:34px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.section-title h2,
+.why-us h2,
+#contact h2{
+    font-size:30px;
+}
+
+.course-card img{
+    height:200px;
+}
+
+.whatsapp-float{
+    width:55px;
+    height:55px;
+    font-size:26px;
+}
+
+}
+
+@media (max-width:576px){
+
+.btn{
+    width:100%;
+    margin-bottom:12px;
+}
+
+.hero-stats{
+    flex-direction:column;
+    align-items:center;
+}
+
+.feature-card,
+.course-card,
+.testimonial-card{
+    margin-bottom:20px;
+}
+
+}
+```
